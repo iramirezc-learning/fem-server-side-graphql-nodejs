@@ -1,20 +1,26 @@
 {
   "user": {
-    "id": "jBWMVGjm50l6LGwepDoty",
+    "id": "d0d0be59-0297-4147-a494-9b9a9545ca7a",
     "username": "iramirezc"
   },
   "pet": [
     {
-      "id": "abc123",
+      "id": "97e0f792-6583-4592-a295-701e53040c09",
       "createdAt": 1613933838991,
       "name": "Micha",
       "type": "CAT"
     },
     {
-      "id": "def456",
+      "id": "b0ce3f29-2cf4-4cdf-929c-12bba32bf8e9",
       "createdAt": 1613933846131,
       "name": "Gato",
       "type": "CAT"
+    },
+    {
+      "id": "bc30b9f9-fc55-4e1b-ab7e-cf8c2854ed0c",
+      "createdAt": 1613940838601,
+      "name": "Lucky",
+      "type": "DOG"
     }
   ]
 }

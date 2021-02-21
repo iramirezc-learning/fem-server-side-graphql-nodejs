@@ -5,15 +5,16 @@ const gql = require("graphql-tag");
  */
 const typeDefs = gql`
   type User {
-    id: String!
+    id: ID!
     username: String!
   }
 
   type Pet {
-    id: String!
+    id: ID!
     createdAt: String!
     name: String!
-    type: String
+    type: String!
+    img: String!
   }
 
   type Query {
