@@ -1,0 +1,25 @@
+{
+  "name": "fem-server-side-graphql-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write \"packages/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iramirezc-learning/fem-server-side-graphql-nodejs.git"
+  },
+  "keywords": [],
+  "author": "Isaac Ramirez <iramirezc@live.com.mx>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iramirezc-learning/fem-server-side-graphql-nodejs/issues"
+  },
+  "homepage": "https://github.com/iramirezc-learning/fem-server-side-graphql-nodejs#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  }
+}
