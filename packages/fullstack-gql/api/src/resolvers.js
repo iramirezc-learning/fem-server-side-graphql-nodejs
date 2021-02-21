@@ -8,8 +8,11 @@ module.exports = {
     user(_, __, context) {
       return context.models.User.findOne();
     },
-    pets(_, __, context) {
-      return context.models.Pet.findMany();
+    pet(_, { input }, context) {
+      return context.models.Pet.findOne((pet) => pet.id === input.id);
+    },
+    pets(_, { input }, context) {
+      return context.models.Pet.findMany((pet) => pet.type === input.type);
     },
   },
   // Mutation: {},
