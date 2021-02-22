@@ -13,6 +13,14 @@ module.exports = {
     pets(_, { input }, context) {
       return context.models.Pet.findMany(input);
     },
+    favorites(_, { input }, context) {
+      // hardcoded hobbies
+      const hobbies = [
+        { id: 1, name: "photography" },
+        { id: 2, name: "sport climbing" },
+      ];
+      return context.models.Pet.findMany().concat(hobbies);
+    },
   },
   Mutation: {
     pet(_, { input }, context) {
@@ -43,6 +51,19 @@ module.exports = {
   Parrot: {
     img() {
       return "http://placebeard.it/g/640/480";
+    },
+  },
+  Favorite: {
+    __resolveType(obj) {
+      if (obj.barks) {
+        return "Dog";
+      } else if (obj.meows) {
+        return "Cat";
+      } else if (obj.talks) {
+        return "Parrot";
+      } else {
+        return "Hobbie";
+      }
     },
   },
 };

@@ -66,10 +66,18 @@ const typeDefs = gql`
     type: PetType!
   }
 
+  type Hobbie {
+    id: ID!
+    name: String!
+  }
+
+  union Favorite = Dog | Cat | Parrot | Hobbie
+
   type Query {
     user: User!
     pet(input: PetInput): Pet
     pets(input: PetsInput): [Pet]!
+    favorites: [Favorite]!
   }
 
   type Mutation {
