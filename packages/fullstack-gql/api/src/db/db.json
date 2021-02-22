@@ -32,5 +32,15 @@
       "type": "PARROT",
       "talks": "hola"
     }
+  ],
+  "hobbie": [
+    {
+      "id": 1,
+      "name": "photography"
+    },
+    {
+      "id": 2,
+      "name": "sport climbing"
+    }
   ]
 }

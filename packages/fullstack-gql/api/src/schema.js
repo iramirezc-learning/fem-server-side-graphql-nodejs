@@ -7,6 +7,8 @@ const typeDefs = gql`
   type User {
     id: ID!
     username: String!
+    pets: [Pet]!
+    hobbies: [Hobbie]!
   }
 
   """
@@ -24,6 +26,7 @@ const typeDefs = gql`
     name: String!
     type: PetType!
     img: String!
+    user: User!
   }
 
   type Dog implements Pet {
@@ -33,6 +36,7 @@ const typeDefs = gql`
     type: PetType!
     img: String!
     barks: String!
+    user: User!
   }
 
   type Cat implements Pet {
@@ -42,6 +46,7 @@ const typeDefs = gql`
     type: PetType!
     img: String!
     meows: String!
+    user: User!
   }
 
   type Parrot implements Pet {
@@ -51,6 +56,7 @@ const typeDefs = gql`
     type: PetType!
     img: String!
     talks: String!
+    user: User!
   }
 
   input PetInput {
@@ -69,6 +75,7 @@ const typeDefs = gql`
   type Hobbie {
     id: ID!
     name: String!
+    user: User!
   }
 
   union Favorite = Dog | Cat | Parrot | Hobbie
