@@ -9,11 +9,20 @@ const typeDefs = gql`
     username: String!
   }
 
+  """
+  This is a comment for PetType
+  """
+  enum PetType {
+    DOG
+    CAT
+    PARROT
+  }
+
   type Pet {
     id: ID!
     createdAt: String!
     name: String!
-    type: String!
+    type: PetType!
     img: String!
   }
 
@@ -22,12 +31,12 @@ const typeDefs = gql`
   }
 
   input PetsInput {
-    type: String
+    type: PetType
   }
 
   input NewPetInput {
     name: String!
-    type: String!
+    type: PetType!
   }
 
   type Query {

@@ -9,10 +9,10 @@ module.exports = {
       return context.models.User.findOne();
     },
     pet(_, { input }, context) {
-      return context.models.Pet.findOne((pet) => pet.id === input.id);
+      return context.models.Pet.findOne(input);
     },
     pets(_, { input }, context) {
-      return context.models.Pet.findMany((pet) => pet.type === input.type);
+      return context.models.Pet.findMany(input);
     },
   },
   Pet: {
