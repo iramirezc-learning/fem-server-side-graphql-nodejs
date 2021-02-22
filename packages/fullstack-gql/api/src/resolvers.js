@@ -1,8 +1,7 @@
 /**
- * Here are your Resolvers for your Schema. They must match
- * the type definitions in your schema
+ * Here are your Resolvers for your Schema.
+ * They must match the type definitions in your schema.
  */
-
 module.exports = {
   Query: {
     user(_, __, context) {
@@ -15,16 +14,35 @@ module.exports = {
       return context.models.Pet.findMany(input);
     },
   },
-  Pet: {
-    img(pet) {
-      return pet.type === "DOG"
-        ? "https://placedog.net/300/300"
-        : "http://placekitten.com/300/300";
-    },
-  },
   Mutation: {
     pet(_, { input }, context) {
       return context.models.Pet.create(input);
+    },
+  },
+  Pet: {
+    __resolveType(pet) {
+      if (pet.barks) {
+        return "Dog";
+      } else if (pet.meows) {
+        return "Cat";
+      } else {
+        return "Parrot";
+      }
+    },
+  },
+  Dog: {
+    img() {
+      return "https://placedog.net/300/300";
+    },
+  },
+  Cat: {
+    img() {
+      return "http://placekitten.com/300/300";
+    },
+  },
+  Parrot: {
+    img() {
+      return "http://placebeard.it/g/640/480";
     },
   },
 };

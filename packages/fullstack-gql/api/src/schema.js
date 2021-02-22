@@ -18,12 +18,39 @@ const typeDefs = gql`
     PARROT
   }
 
-  type Pet {
+  interface Pet {
     id: ID!
     createdAt: String!
     name: String!
     type: PetType!
     img: String!
+  }
+
+  type Dog implements Pet {
+    id: ID!
+    createdAt: String!
+    name: String!
+    type: PetType!
+    img: String!
+    barks: String!
+  }
+
+  type Cat implements Pet {
+    id: ID!
+    createdAt: String!
+    name: String!
+    type: PetType!
+    img: String!
+    meows: String!
+  }
+
+  type Parrot implements Pet {
+    id: ID!
+    createdAt: String!
+    name: String!
+    type: PetType!
+    img: String!
+    talks: String!
   }
 
   input PetInput {

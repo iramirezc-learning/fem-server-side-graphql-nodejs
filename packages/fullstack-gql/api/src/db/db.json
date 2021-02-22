@@ -8,25 +8,29 @@
       "id": "97e0f792-6583-4592-a295-701e53040c09",
       "createdAt": 1613933838991,
       "name": "Micha",
-      "type": "CAT"
+      "type": "CAT",
+      "meows": "Prrrf"
     },
     {
       "id": "b0ce3f29-2cf4-4cdf-929c-12bba32bf8e9",
       "createdAt": 1613933846131,
       "name": "Gato",
-      "type": "CAT"
+      "type": "CAT",
+      "meows": "Miau!"
     },
     {
       "id": "bc30b9f9-fc55-4e1b-ab7e-cf8c2854ed0c",
       "createdAt": 1613940838601,
       "name": "Lucky",
-      "type": "DOG"
+      "type": "DOG",
+      "barks": "woof woof!"
     },
     {
       "id": "-o4fyvNeB21Jgcl-uXhYG",
       "createdAt": 1613956130842,
       "name": "Paco",
-      "type": "PARROT"
+      "type": "PARROT",
+      "talks": "hola"
     }
   ]
 }
