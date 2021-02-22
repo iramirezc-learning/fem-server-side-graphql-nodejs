@@ -26,11 +26,11 @@ Started On
 
 Completed On
 
-> ???
+> Feb 21, 2021
 
 Total Pomodoro Time
 
-> ???
+> 7 hours, 15 minutes
 
 ## Course Resources
 
