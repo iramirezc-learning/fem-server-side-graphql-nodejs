@@ -21,6 +21,12 @@
       "createdAt": 1613940838601,
       "name": "Lucky",
       "type": "DOG"
+    },
+    {
+      "id": "-o4fyvNeB21Jgcl-uXhYG",
+      "createdAt": 1613956130842,
+      "name": "Paco",
+      "type": "Parrot"
     }
   ]
 }

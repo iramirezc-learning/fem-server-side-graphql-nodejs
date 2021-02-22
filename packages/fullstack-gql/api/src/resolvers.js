@@ -15,7 +15,6 @@ module.exports = {
       return context.models.Pet.findMany((pet) => pet.type === input.type);
     },
   },
-  // Mutation: {},
   Pet: {
     img(pet) {
       return pet.type === "DOG"
@@ -23,5 +22,9 @@ module.exports = {
         : "http://placekitten.com/300/300";
     },
   },
-  // User: {},
+  Mutation: {
+    pet(_, { input }, context) {
+      return context.models.Pet.create(input);
+    },
+  },
 };
