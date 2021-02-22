@@ -2,8 +2,6 @@
 
 This is my personal repository for the course [Server-Side GraphQL in Node.js](https://frontendmasters.com/courses/server-graphql-nodejs/) hosted by [FrontEnd Masters](https://frontendmasters.com/).
 
-> 🚧 WIP Since Feb 2021
-
 ## Course Details
 
 Teacher
